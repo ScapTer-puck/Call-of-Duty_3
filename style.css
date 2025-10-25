@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(180deg, #000000 0%, #111111 40%, #1a1a1a 100%);
+    color: white;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Плавна поява сторінки */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Білий текст скрізь */
+h2, h3, p, a {
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Посилання */
+a {
+    color: #ff0000;
+    background-color: #440000;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #af0404;
+    color: black;
+    box-shadow: 0 0 15px #c70000;
+}
+
+/* Заголовки */
+h2 {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+h2:hover {
+    color: #ff0000;
+    text-shadow: 0 0 10px #990008;
+}
+
+
+/* Зображення */
+img {
+    position: relative;
+    left: 125px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255,255,255,0.4);
+}
+
+/* Лінія розділу */
+hr {
+    border: 1px solid gray;
+    margin: 20px 0;
+    animation: slideUp 1s ease-out;
+}
+
+/* Анімація появи контенту */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
